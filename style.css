@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	height: 100vh;
+	font-size: 2em;
+	font-family: Montserrat;
+	font-weight: normal;
+	text-align: center;
+	background: #709e7a;
+}
+
+.container{
+	max-width: 100%;
+	height:100%;
+	margin: 0 auto;
+	font-size: 14pt;
+	font-family:"Segoe UI Light";
+	padding-top: 25px;	
+}
+
+span{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	background: white;
+	opacity: 0.5;
+}
+
+.blackkey{
+	opacity: 1;
+	width: 5vw;
+	height:20%;
+	float: left;
+	background: black;
+	border-right-width: 2px;
+	border-right-style: solid;
+	margin-top: 20px;
+}
+
+.blackkey:hover{
+	background:#42150d;
+	border-color:#42150d;
+}
+.blackkey:active{
+	background: #c94942;
+	border-color: #c94942;
+}
+
+.whiteleft:hover{
+	background:#9effe4;
+}
+.whiteleft:active{
+	background: #52bf92;
+}
+
+.whitecenter:hover{
+	background:#9effe4;
+}
+.whitecenter:active{
+	background: #52bf92;
+}
+
+.whitebottom:hover{
+	background:#9effe4;
+}
+.whitebottom:active{
+	background: #52bf92;
+}
+
+.whiteleft{
+	opacity: 1;
+	float: left;
+	width:7.5vw;
+	height:20%;
+	background: white;
+	margin-top: 20px;
+}
+
+.whitecenter{
+	float: left;
+	opacity: 1;
+	width: 5vw;
+	height:20%;
+	background: white;
+	margin-top: 20px;
+}
+
+.whitebottom{
+	float: left;
+	opacity: 1;
+	width: 10vw;
+	height:20%;
+	background: white;
+	border-right-width: 2px;
+	border-right-style: solid;
+	margin-bottom: 20px;
+}
+
+
+.frame{
+	opacity: 1;
+	background: #ffffffaa;
+	width: 80%;
+	height: 80vh;
+	position: relative;
+	left: 15%;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	
+}
