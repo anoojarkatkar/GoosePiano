@@ -1,6 +1,21 @@
+var bgm = new Audio('Sounds/legoosehonk.wav')
+var playbgm = 1
+
+
 function play(note) {
   var audio = new Audio('Sounds/'+note+'.wav');
   audio.play();
+}
+
+function muse() {
+	if(playbgm>0){
+		bgm.play();
+		playbgm = 1 - playbgm;
+	}
+	else{
+		bgm.pause;
+		playbgm = 1- playbgm;
+	}
 }
 
 var dict_white = {
