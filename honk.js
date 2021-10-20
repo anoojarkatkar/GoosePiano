@@ -13,7 +13,7 @@ function muse() {
 		playbgm = 1 - playbgm;
 	}
 	else{
-		bgm.pause;
+		bgm.pause();
 		playbgm = 1- playbgm;
 	}
 }
