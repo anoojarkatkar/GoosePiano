@@ -1,12 +1,6 @@
 var bgm = new Audio('Sounds/legoosehonk.wav')
 var playbgm = 1
 
-
-function play(note) {
-  var audio = new Audio('Sounds/'+note+'.wav');
-  audio.play();
-}
-
 function muse() {
 	if(playbgm>0){
 		bgm.play();
@@ -54,6 +48,21 @@ var dict_black = {
 	"0": "c_6",
 	
 }
+
+var notedict = {};
+
+var notenames = Object.values(dict_white).concat(Object.values(dict_black));
+for (var i = 0; i < notenames.length; i++){
+	notedict[notenames[i]] = new Audio("Sounds/" + notenames[i] + ".wav");
+}
+
+function play(note) {
+  var audio = notedict[note];
+  audio.pause();
+  audio.currentTime=0;
+  audio.play();
+}
+
 
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key in dict_white) {
