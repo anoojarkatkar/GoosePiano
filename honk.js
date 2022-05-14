@@ -1,3 +1,6 @@
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 var bgm = new Audio('Sounds/legoosehonk.wav')
 var playbgm = 1
 
